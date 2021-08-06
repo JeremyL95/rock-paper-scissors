@@ -14,18 +14,36 @@
 <body>
     <main>
         <section class="game">
-            <div class="score-display">
-                <div class="player-score">
-                    <h2>Player</h2>
-                    <p>0</p>
-                </div>
-                <div class="computer-score">
-                    <h2>CPU</h2>
-                    <p>0</p>
-                </div>
+
+            <div class="intro">
+                <h1>Rock Paper Scissors</h1>
+                <button id="btn-start">Start</button>
             </div>
 
-            <div class="container">
+            <div class="outro fadeOut">
+                <h1 class="final-score"></h1>
+                <button id="btn-restart"><a href="index.html">Play Again</a></button>
+            </div>
+
+            <div class="container fadeOut">
+
+                <div class="score-display">
+                    <div class="player-score">
+                        <h2>Player</h2>
+                        <br>
+                        <p>0</p>
+                    </div>
+                    <div class="computer-score">
+                        <h2>CPU</h2>
+                        <br>
+                        <p>0</p>
+                    </div>
+                </div>
+
+                <div class="display">
+                    <h2 id="result">Choose an option</h2>
+                </div>
+
                 <div class="hands">
                     <img class="player-hand" src="img/rock.png" alt="player's hand">
                     <img class="computer-hand" src="img/rock.png" alt="computer's hand">
