@@ -1,2 +1,145 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.intro,
+h2,
+.outro {
+    text-align: center;
+}
+
+.score-display {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.hands {
+    margin: 3em;
+}
+
+.player-hand,
+.computer-hand {
+    width: 10%;
+    padding: 1em;
+}
+
+.computer-hand {
+    transform: scaleX(-1);
+}
+
+.hands,
+.options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    padding: 1em;
+    margin-top: 2em;
+    cursor: pointer;
+    background-color: #135737;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.fadeOut {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.fadeIn {
+    opacity: 1;
+    pointer-events: all;
+}
+
+@keyframes playerChoosing {
+    0% {
+        transform: translateY(0px);
+    }
+
+    15% {
+        transform: translateY(-20px);
+    }
+
+    30% {
+        transform: translateY(0px);
+    }
+
+    45% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(0px);
+    }
+
+    75% {
+        transform: translateY(-20px);
+    }
+
+    90% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes computerChoosing {
+    0% {
+        transform: scaleX(-1) translateY(0px);
+    }
+
+    15% {
+        transform: scaleX(-1) translateY(-20px);
+    }
+
+    30% {
+        transform: scaleX(-1) translateY(0px);
+    }
+
+    45% {
+        transform: scaleX(-1) translateY(-20px);
+    }
+
+    60% {
+        transform: scaleX(-1) translateY(0px);
+    }
+
+    75% {
+        transform: scaleX(-1) translateY(-20px);
+    }
+
+    90% {
+        transform: scaleX(-1) translateY(-20px);
+    }
+
+    100% {
+        transform: scaleX(-1) translateY(0px);
+    }
+}
